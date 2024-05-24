@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training</title>
+  <link rel="stylesheet" href="training.css">
+</head>
+
+<body>
+  <div class="container" id="normal-nav">
+    <nav>
+      <div class="dropdown-toggle">
+        <button>Dropdown</button>
+      </div>
+      <ul class="nav-items">
+        <div class="li-items">
+          <li>Catalog</li>
+          <li>Resources</li>
+          <li>Community</li>
+          <li>Pricing</li>
+          <li>Career Center</li>
+          <li>For Teams</li>
+        </div>
+        <div class="ctc">
+          <button class="login">Log in </button>
+          <button class="sign-up"> Sign up </button>
+        </div>
+        <div class="hamburger">
+          <button onclick="Hamburger()">
+            <div class="open" id="open">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="close" id="close">
+              <div></div>
+              <div></div>
+            </div>
+        </div>
+        </button>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav" style="display: none;">
+    <ul>
+      <div class="mobile-items">
+        <li>Catalog</li>
+        <li>Resources</li>
+        <li>Community</li>
+        <li>Pricing</li>
+        <li>Career Center</li>
+        <li>For Teams</li>
+      </div>
+    </ul>
+  </div>
+
+  <div class="pattern">
+    <svg fill="currentColor" role="img" aria-hidden="true" class="gamut-dh3it3 e3tf18d0" width="100%" height="100%">
+      <pattern id="CheckerDense-pattern-:r1:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+        <rect width="1" height="1" fill="currentColor"></rect>
+        <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+      </pattern>
+      <rect width="100%" height="100%" fill="url(#CheckerDense-pattern-:r1:)"></rect>
+    </svg>
+    <div class="content-box">
+      <div class="inner-content-box">
+        <div class="container course col-4">
+          <p>Course</p>
+        </div>
+        <div class="container welcome col-9">
+          <h1>Welcome to swabhav techlabs</h1>  
+        </div>
+        <div class="container info col-6">
+          <p> This is our course and this is just some dummy text make sure to replace this with the actual text later
+          </p>
+        </div>
+        <div class="container col-6" style="font-size: 12px;">
+          <p>Click below to start the course.</p>
+        </div>
+        <div class="container col-3">
+          <button class="start-button">Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="content-box2">
+        <ul class="container box2">
+          <div class=" container col-3">
+            <li> Beginner</li>
+          </div>
+          <div class="container col-3">
+            <li> 25 Hours</li>
+          </div>
+          <div class="container col-3">
+            <li> Certificate Included</li>
+          </div>
+          <div class="container col-3">
+            <li> None</li>
+          </div>
+        </ul>
+      </div>
+    </div>  -->
+
+  <div class="about-section">
+    <div class="about">
+      <div class="container col-6">
+        <h1><b>About this course</b></h1>
+      </div>
+      <div class="container col-4">
+        <div class="container col-sm">
+          <p>If you’re looking for a programming language that’s flexible and easy to read, try learning Python.
+            It’s one of the most popular languages today,
+            and programming in Python is used for everything from web and software development to data science and
+            analytics
+            to quality assurance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills">
+      <div class="container col-6">
+        <h1>Skills you will gain.</h1>
+      </div>
+      <ul>
+        <div class="container col-3">
+          <li>Golang</li>
+          <li>Angular</li>
+          <li>MySql</li>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <!---->
+  <div class="container col-8" style="margin-top: 50px;">
+    <button class="collapsible">Open Collapsible</button>
+    <div class="content">
+      <div class="container col-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.</p>
+      </div>
+    </div>
+
+    <button class="collapsible">Golang</button>
+    <div class="content">
+      <div class="container col-6">
+        <p>Golang is golang.</p>
+      </div>
+    </div>
+
+    <button class="collapsible">Python</button>
+    <div class="content">
+      <div class="container col-6">
+        <p>Python means power machine.</p>
+      </div>
+    </div>
+
+    <button class="collapsible">Node js</button>
+    <div class="content">
+      <div class="container col-6">
+        <p>Node can be used for backend.</p>
+      </div>
+    </div>
+
+    <div class="container col-3">
+      <div class="start-align">
+        <button class="start"> Start </button>
+      </div>
+    </div>
+  </div>
+  <!---->
+
+  <div class="learning">
+    <div class="learning-header">
+      <div class="platform">The platform</div>
+      <div class="learning-heading">
+        <h4>Hands-on learning</h4>
+      </div>
+    </div>
+    <div class="learning-content">
+      <div class="learning-menu">
+        <div class="active" id="batmanClass" onclick="Video(this)">
+          <span>I am Batman</span>
+          <p class="learning-detail" style="display: block;">Make progress faster with our AI Learning Assistant, a tool
+            that automatically understands your current course, instructions, and solution code — and gives you instant
+            personalized feedback and guidance.</p>
+        </div>
+        <div class="" id="spidermanClass" onclick="Video(this)">
+          <span>I am Spiderman</span>
+          <p class="learning-detail" style="display: none;">Make progress faster with our AI Learning Assistant, a tool
+            that automatically understands your current course, instructions, and solution code — and gives you instant
+            personalized feedback and guidance.</p>
+        </div>
+        <div class="" id="iron-manClass" onclick="Video(this)">
+          <span>I am Iron Man</span>
+          <p class="learning-detail" style="display: none;">Make progress faster with our AI Learning Assistant, a tool
+            that automatically understands your current course, instructions, and solution code — and gives you instant
+            personalized feedback and guidance.</p>
+        </div>
+      </div>
+      <div class="learning-video">
+        <iframe class="video" id="batman" style="display: block;"
+          src="https://www.youtube.com/embed/QEBCT-Lsh-A?si=yjU3dOB70M39RHDy" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="video" id="spiderman" style="display: none;"
+          src="https://www.youtube.com/embed/yRhRZB-nqOU?si=znfqxqUgbynsmRA2" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="video" id="iron-man" style="display: none;"
+          src="https://www.youtube.com/embed/t86sKsR4pnk?si=_6uz2QE31wdWg5gr" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="container projects col-6">
+      <h1>Projects in this course.</h1>
+    </div>
+
+    <div class=" all-box ">
+      <a href="https://www.geeksforgeeks.org/how-to-create-three-boxes-in-the-same-div-using-html-and-css/" class="box">
+        <div class="container col-3">
+          <h4>Project</h4>
+        </div>
+        <div class="container col-9">
+          <h1>Receipts for lovely</h1>
+        </div>
+        <span class="container col-6">
+          <p>Keep receipts for your lovely loveseats. Programming is a treat with this sweet suite of feats! Use
+            strings and numbers to save a catalog of furniture, then perform concatenation and math calculations to
+            create a receipt.</p>
+        </span>
+      </a>
+
+      <a href="https://www.geeksforgeeks.org/how-to-create-three-boxes-in-the-same-div-using-html-and-css/" class="box">
+        <div class="container col-3">
+          <h4>Project</h4>
+        </div>
+        <div class="container col-9">
+          <h1>Receipts for lovely</h1>
+        </div>
+        <span class="container col-6">
+          <p>Keep receipts for your lovely loveseats. Programming is a treat with this sweet suite of feats! Use
+            strings and numbers to save a catalog of furniture, then perform concatenation and math calculations to
+            create a receipt.</p>
+        </span>
+      </a>
+
+      <a href="https://www.geeksforgeeks.org/how-to-create-three-boxes-in-the-same-div-using-html-and-css/" class="box">
+        <div class="container col-3">
+          <h4>Project</h4>
+        </div>
+        <div class="container col-9">
+          <h1>Receipts for lovely</h1>
+        </div>
+        <span class="container col-6">
+          <p>Keep receipts for your lovely loveseats. Programming is a treat with this sweet suite of feats! Use
+            strings and numbers to save a catalog of furniture, then perform concatenation and math calculations to
+            create a receipt.</p>
+        </span>
+      </a>
+    </div>
+
+    <div class="mentor">
+      <div class="heading">
+        <h4>Meet The Mentor</h4>
+      </div>
+      <div class="mentor-content">
+        <div class="mentor-image-container">
+          <img
+            src="https://images.ctfassets.net/kcw3l04aboxk/3AgmLlPvX7oJ7bNOQginaL/21889e7795a0b7c9a46f865c7ecbe16d/Kenny.png"
+            class="mentor-image" />
+        </div>
+        <div class="description">
+          <h4 class="mentor-name">Sanjeev Yadav</h4>
+          <div class="details">A wisecracking mercenary gets experimented on and becomes immortal yet hideously
+            scarred, and sets out to track down the man who ruined his looks.</div>
+          <a href="https://www.imdb.com/title/tt0848228/"><button class="mentor-button">Meet the team of
+              mentor</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container projects col-6">
+        <h1>Testimonials</h1>
+      </div>
+
+      <div class="all-box">
+        <a href="https://www.example.com/project1" class="box">
+          <div class="container col-3">
+            <h4>Review</h4>
+          </div>
+          <div class="container col-9">
+            <h1>Review 1</h1>
+          </div>
+          <span class="container col-6">
+            <p>Project 1 testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua."</p>
+          </span>
+        </a>
+
+        <a href="https://www.example.com/project2" class="box">
+          <div class="container col-3">
+            <h4>Review</h4>
+          </div>
+          <div class="container col-9">
+            <h1>Review 2</h1>
+          </div>
+          <span class="container col-6">
+            <p>Project 2 testimonial: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat."</p>
+          </span>
+        </a>
+
+        <a href="https://www.example.com/project3" class="box">
+          <div class="container col-3">
+            <h4>Review</h4>
+          </div>
+          <div class="container col-9">
+            <h1>Review 3</h1>
+          </div>
+          <span class="container col-6">
+            <p>Project 3 testimonial: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur."</p>
+          </span>
+        </a>
+      </div>
+
+      <!--Frequently asked question-->
+      <div class="container col-9">
+
+        <div class="container faq col-6">
+          <h1>Frequently asked questions.</h1>
+        </div>
+
+        <button class="collapsible faq-heading">
+          <h1>Why should i learn Python ?</h1>
+        </button>
+        <div class="content-faq">
+          <div class="container col-6 faq-ans">
+            <p>
+              Learn Python for its versatility, simplicity, thriving community, abundant resources, job opportunities,
+              popularity, and future-proofing potential.</p>
+          </div>
+        </div>
+        <hr>
+
+        <button class="collapsible faq-heading">
+          <h1>what can i do with python ?</h1>
+        </button>
+        <div class="content-faq">
+          <div class="container col-6 faq-ans">
+            <p>
+              With Python, you can develop websites, analyze data, create machine learning models, automate tasks,
+              build games, work with artificial intelligence, develop desktop applications, and much more.</p>
+          </div>
+        </div>
+        <hr>
+
+
+        <button class="collapsible faq-heading">
+          <h1>Will python land me a job</h1>
+        </button>
+        <div class="content-faq">
+          <div class="container col-6 faq-ans">
+            <p>Yes, learning Python can significantly enhance your job prospects as it is widely used in various
+              industries for software development, data analysis, machine learning, web development, automation, and
+              more.</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+    </div>
+
+
+    <!--Browse more topics-->
+    <div class="container">
+      <div class="row">
+        <div class="browse-content col-md-12">
+          <h2>Browse more topics</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <ul class="tech col-md-3">
+          <li><a href="https://www.python.org/">Python</a></li>
+          <li><a href="https://openai.com/">Artificial Intelligence</a></li>
+          <li><a href="https://go.dev/play/">Go (Golang)</a></li>
+          <li><a href="https://go.dev/play/">Go (Golang)</a></li>
+          <li><a href="https://go.dev/play/">Go (Golang)</a></li>
+          <li><a href="https://go.dev/play/">Go (Golang)</a></li>
+        </ul>
+      </div>
+
+      <div class="row button-container">
+        <div class="col-md-12">
+          <a href="https://link-to-all-courses" class="browse-button">Browse All Courses</a>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="training.js"></script>
+</body>
+
+</html>
